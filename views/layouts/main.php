@@ -7,6 +7,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use \yii\bootstrap\Modal;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use app\assets\AppAssetIE;
@@ -141,7 +142,7 @@ AppAssetIE::register($this);
                                         <li><a href="blog-single.html">Blog Single</a></li>
                                     </ul>
                                 </li> 
-                                <li><a href="404.html">404</a></li>
+                                <li><a href="<?= Url::to(['news/view'])?>">News</a></li>
                                 <li><a href="contact-us.html">Contact</a></li>
                             </ul>
                         </div>
